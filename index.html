@@ -1,14 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Project-Pokémon</title>
+
+</head>
+
+<body>
+    <img class="logo" src="./src/images/International_Pokémon_logo.svg.png" alt="">
+    <h1>Pokémon 1st. Generation</h1>
+
+    <form id="pokemon-search-form">
+        <input type="text" id="search-input" placeholder="Search Pokémon by name or ID" />
+
+        <select id="type-select">
+            <option value="">All Types</option>
+        </select>
+
+        <button type="submit">Search</button>
+    </form>
+
+    <button id="show_pk">show All Pokemon</button>
+
+    <main id="pokemon-list">
+
+    </main>
+    <img class="pikachu" src="./src/images/Pokemon.png" alt="">
+
+    <script src="./src/main.ts" defer></script>
+</body>
+
 </html>
-dddd
